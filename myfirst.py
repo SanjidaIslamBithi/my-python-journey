@@ -54,3 +54,8 @@ print(float(10))
 print(int(3.33))
 # They can even be called on strings!
 print(int('807') + 1)
+
+8 - 3 + 2
+
+
+print(int('8090') + 1)
