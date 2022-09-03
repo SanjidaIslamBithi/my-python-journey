@@ -60,3 +60,56 @@ print(can_run_for_president(55, True))
 #False
 #False
 #True
+True or True and False
+#true
+
+def inspect(x):
+    if x == 0:
+        print(x, "is zero")
+    elif x > 0:
+        print(x, "is positive")
+    elif x < 0:
+        print(x, "is negative")
+    else:
+        print(x, "is unlike anything I've ever seen...")
+
+inspect(0)
+inspect(-15)
+
+#0 is zero
+#-15 is negative
+
+def f(x):
+    if x > 0:
+        print("Only printed when x is positive; x =", x)
+        print("Also only printed when x is positive; x =", x)
+    print("Always printed, regardless of x's value; x =", x)
+
+f(1)
+f(0)
+
+#Only printed when x is positive; x = 1
+#Also only printed when x is positive; x = 1
+#Always printed, regardless of x's value; x = 1
+#Always printed, regardless of x's value; x = 0
+
+#Boolean conversion
+
+print(bool(1)) # all numbers are treated as true, except 0
+print(bool(0))
+print(bool("asf")) # all strings are treated as true, except the empty string ""
+print(bool(""))
+# Generally empty sequences (strings, lists, and other types we've yet to see like lists and tuples)
+# are "falsey" and the rest are "truthy"
+
+
+#True
+#False
+#True
+#False
+
+if 0:
+    print(0)
+elif "spam":
+    print("spam")
+#spam
