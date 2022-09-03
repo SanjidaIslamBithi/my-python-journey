@@ -1,0 +1,62 @@
+#Booleans
+x = True
+print(x)
+print(type(x))
+
+#True
+#<class 'bool'>
+
+#Operation	Description		                  Operation	                   Description
+#a == b	    a equal to b                        a != b	                  a not equal to b
+#a < b	    a less than b		                a > b	                  a greater than b
+#a <= b	    a less than or equal to b           a >= b	                    a greater than or equal to b
+
+
+def can_run_for_president(age):
+    """Can someone of the given age run for president in the US?"""
+    # The US Constitution says you must be at least 35 years old
+    return age >= 35
+
+print("Can a 19-year-old run for president?", can_run_for_president(19))
+print("Can a 45-year-old run for president?", can_run_for_president(45))
+
+
+#Can a 19-year-old run for president? False
+#Can a 45-year-old run for president? True
+
+
+
+3.0 == 3
+#True
+
+#But sometimes they can be tricky
+
+'3' == 3
+#False
+
+
+def is_odd(n):
+    return (n % 2) == 1
+
+print("Is 100 odd?", is_odd(100))
+print("Is -1 odd?", is_odd(-1))
+
+#Is 100 odd? False
+#Is -1 odd? True
+
+#Remember to use == instead of = when making comparisons. If you write n == 2 you are asking about the value of n. When you write n = 2 you are changing the value of n.
+
+#Combining Boolean Values
+
+
+def can_run_for_president(age, is_natural_born_citizen):
+    """Can someone of the given age and citizenship status run for president in the US?"""
+    # The US Constitution says you must be a natural born citizen *and* at least 35 years old
+    return is_natural_born_citizen and (age >= 35)
+
+print(can_run_for_president(19, True))
+print(can_run_for_president(55, False))
+print(can_run_for_president(55, True))
+#False
+#False
+#True
